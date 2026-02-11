@@ -1,4 +1,5 @@
 
+// arrys and array methods
 let arry = [1, 2, 3, 4, 5];
 console.log(arry);
 console.log(typeof arry);
