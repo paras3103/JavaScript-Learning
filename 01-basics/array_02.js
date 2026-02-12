@@ -17,7 +17,7 @@ console.log(all_heros);
 
 
 // sparde opertor 
-const all_heros2 = [...marvel_heros, ...dc_heros];
+const all_heros2 = [...marvel_heros, ...dc_heros]; 
 console.log(all_heros2);
 
 console.log(Array.isArray(dc_heros));
