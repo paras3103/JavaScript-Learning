@@ -23,3 +23,8 @@ console.log(all_heros2);
 console.log(Array.isArray(dc_heros));
 console.log(Array.from("Hello World"));
 console.log(Array.from({name: "Hello World"})); //interesting 
+
+
+console.log(Array.isArray(dc_heros));
+
+console.log(dc_heros);
