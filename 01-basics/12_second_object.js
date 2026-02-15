@@ -58,13 +58,13 @@ console.log(obj4);
 const obj5 = {...obj1, ...obj3};
 console.log(obj5);
 
-console.log(Object.keys(obj5));
-console.log(Object.values(obj5));
-console.log(Object.entries(obj5));
+// console.log(Object.keys(obj5));
+// console.log(Object.values(obj5));
+// console.log(Object.entries(obj5));
 
 
 // boolean value checking for object properties
 
-console.log(appUser.hasOwnProperty("name"));
-console.log(appUser.hasOwnProperty("email"));
-console.log(appUser.hasOwnProperty("age"));
+// console.log(appUser.hasOwnProperty("name"));
+// console.log(appUser.hasOwnProperty("email"));
+// console.log(appUser.hasOwnProperty("age"));
