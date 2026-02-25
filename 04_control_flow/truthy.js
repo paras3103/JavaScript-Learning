@@ -24,7 +24,7 @@ if (Object.keys(emptyObject).length === 0) { // Object.keys() returns an array o
 
 // Nullish Coleascing Oprater (??): Null Undefined
 let val1;
-name = "Paras" ?? 10
+name = "paras" ?? 10
 name1 = null ?? "Default Name"
 name2 = undefined ?? "Default Name"
 

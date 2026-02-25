@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inner_box {
+            display: flex;
+            gap: 20px;
+            align-items: self-start;
+        }
+    </style>
+</head>
+
+<body style="background-color: #000; color: #fff;">
+    <ul class="main">
+        <li>Home</li>
+    </ul>
+
+    <div class="box">
+        <div class="inner_box">
+            <div class="image">
+                <img src="" width="200px" height="200px" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Lorem ipsum dolor sit.</h3>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque reprehenderit
+                    odio eum ullam perspiciatis nisi? Atque laudantium deleniti nobis fuga eveniet debitis enim dolor
+                    molestiae repellendus, eligendi, officiis dicta?</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+
+
+
+<script>
+    function addHeaderMenu(menu) {
+        const li = document.createElement('li')
+        li.innerText = menu
+        document.querySelector('.main')
+            .appendChild(li)
+        // li.style.display = "flex" 
+        const clasName = document.querySelector(".main")
+    }
+    addHeaderMenu("About")
+    addHeaderMenu("Blog")
+    addHeaderMenu("Contact")
+    addHeaderMenu("user")
+
+    function addMenu(link) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(link))
+        document.querySelector('.main').appendChild(li)
+    }
+    addMenu("hello")
+
+    const newValue = document.querySelector('li:nth-child(3)')
+    console.log(newValue)
+    // newValue.outerHTML = "<p>hello</p>"
+    // newValue.textContent = "paras"
+    newValue.replaceWith('paras')
+
+
+    const removeLi = document.querySelector('li:last-child')
+    removeLi.remove()
+</script>
+
+</html>

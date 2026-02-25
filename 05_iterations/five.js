@@ -17,9 +17,11 @@ function printMe(item) {
 // programming.forEach(printMe)
 
 
-// programming.forEach( (item , index, arr) => {
-//     console.log(item, index, arr)
-// })
+programming.forEach( (item , index, arr) => {
+    console.log(item, index, arr)
+})
+
+// [{}, {}, {}] user for common in forEach
 
 const myCoding = [
     {
@@ -38,4 +40,5 @@ const myCoding = [
 
 myCoding.forEach((item) => {
     console.log(item.languageName)
+    console.log(item.languageFileName)
 })

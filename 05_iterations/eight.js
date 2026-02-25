@@ -50,7 +50,7 @@ console.log(priceToPay);
 const orderNum = shoppingCart.reduce((acc, item) => acc + item.order, 0)
 console.log(orderNum)
 
-
+// const newTotla = []
 
 shoppingCart.forEach((newvalue) =>  {
 
@@ -60,12 +60,13 @@ shoppingCart.forEach((newvalue) =>  {
 
 })
 
+
 shoppingCart.forEach((item) =>  {
 
     const total = item.price * item.order; 
 
     if (total > 2999) {
-         console.log(`${item.itemName}  total : ${total}`)
+         console.log(`${item.itemName}  total : ${total} : order ${orderNum}`)
     }
 
 })

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <p>start Js Button</p>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+</body>
+<script>
+    const sayDate = function (str) {
+        console.log(str, Date.now());
+    }
+    // setInterval(sayDate, 1000, "Hello")
+
+    // const intervalId = setInterval(sayDate, 1000, "Hello")
+    // clearInterval(intervalId)
+
+    let intervalId;   // global variable
+
+    const startBtn = document.getElementById("start");
+    const stopBtn = document.getElementById("stop");
+
+    startBtn.addEventListener("click", function() {
+
+        if (!intervalId) { 
+            intervalId = setInterval(function() {
+                console.log("Running...", Date.now());
+            }, 1000);
+        }
+
+    });
+
+    stopBtn.addEventListener("click", function() {
+        clearInterval(intervalId);
+        console.log("Stopped");
+    });
+
+
+</script>
+
+</html>

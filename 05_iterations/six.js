@@ -20,18 +20,27 @@ const myCoding = [
 
 const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-const newValue = myNum.filter((num) => {
-    // console.log(num)
+
+// First method
+const newValue1 = myNum.filter((num) => {
     return num > 4
+} )
+console.log(newValue1)
+
+
+// Second Method
+// const newnum = myNum.filter( (num) => num > 4 )
+// console.log(newnum)
+ 
+const  newValue = [] 
+
+myNum.forEach((num) => {
+    if (num > 8) {
+       newValue.push(num)
+    }   
 })
 
 console.log(newValue)
-
-myNum.forEach((newvalue) => {
-    if (newvalue > 8) {
-        console.log(`Here Is value ${newValue}`)
-    }
-})
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
